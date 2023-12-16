@@ -1,0 +1,32 @@
+<!-- activity_signup.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/log_inpage"
+    tools:context=".SignUp.SignupActivity">
+
+    <EditText
+        android:id="@+id/editTextRollNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Roll Number"/>
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextRollNumber"
+        android:layout_marginTop="16dp"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+
+    <Button
+        android:id="@+id/buttonSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/btnColor"
+        android:layout_below="@+id/editTextPassword"
+        android:layout_marginTop="16dp"
+        android:text="Sign Up"/>
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<!-- student_item.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/border_background">
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: N/A"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textViewRollNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Roll Number: N/A"/>
+
+    <TextView
+        android:id="@+id/textViewCgpa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CGPA: N/A"/>
+
+    <TextView
+        android:id="@+id/textViewPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Phone Number: N/A"/>
+
+    <!-- Horizontal layout for buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end">
+
+        <!-- Update button with green color -->
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:backgroundTint="#009F62"
+            android:onClick="onUpdateClick"/>
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:backgroundTint="#F23450"
+            android:onClick="onDeleteClick"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+</LinearLayout>
